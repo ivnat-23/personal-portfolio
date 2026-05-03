@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<portfolio>
+    <profile>
+        <name>Tanvi Kodoli</name>
+        <role>Full-Stack Enthusiast | Android &amp; Web Developer</role>
+        <about>Dedicated Computer Engineering student passionate about building impactful tech solutions.</about>
+    </profile>
+
+    <skills>
+        <skill>
+            <name>Java</name>
+            <level>Expert</level>
+        </skill>
+        <skill>
+            <name>Android Development</name>
+            <level>Expert</level>
+        </skill>
+        <skill>
+            <name>Web Development</name>
+            <level>Advanced</level>
+        </skill>
+        <skill>
+            <name>Firebase</name>
+            <level>Advanced</level>
+        </skill>
+    </skills>
+
+    <projects>
+        <project>
+            <title>NextStep College Predictor</title>
+            <category>AI / Web</category>
+        </project>
+        <project>
+            <title>Mazi Grampanchayat App</title>
+            <category>Android / Governance</category>
+        </project>
+        <project>
+            <title>KMT Connect</title>
+            <category>Real-time Tracking</category>
+        </project>
+    </projects>
+</portfolio>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | Tanvi Kodoli</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <main class="bg-pattern-dots" style="padding-top: 120px; min-height: 100vh;">
+        <div class="container">
+            <section class="reveal fade-bottom" style="padding: 0;">
+                <h1 class="text-gradient" style="margin-bottom: 2rem; text-align: center;">Employee Registration Form</h1>
+            
+            <div class="glass card" style="max-width: 800px; margin: 0 auto;">
+                <form action="#" method="POST">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <!-- Text Input -->
+                        <div class="form-group">
+                            <label for="emp-name">Full Name</label>
+                            <input type="text" id="emp-name" name="emp-name" required>
+                        </div>
+
+                        <!-- Date Input -->
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <!-- Radio Buttons -->
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div style="display: flex; gap: 1.5rem; padding: 0.8rem; background: var(--glass-bg); border-radius: 8px;">
+                                <label style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0;">
+                                    <input type="radio" name="gender" value="male" style="width: auto;"> Male
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0;">
+                                    <input type="radio" name="gender" value="female" style="width: auto;"> Female
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown -->
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <select id="department" name="department">
+                                <option value="it">Information Technology</option>
+                                <option value="hr">Human Resources</option>
+                                <option value="finance">Finance</option>
+                                <option value="marketing">Marketing</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Checkboxes -->
+                    <div class="form-group">
+                        <label>Technical Skills</label>
+                        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; padding: 1rem; background: var(--glass-bg); border-radius: 8px;">
+                            <label style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0;">
+                                <input type="checkbox" name="skills" value="java" style="width: auto;"> Java
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0;">
+                                <input type="checkbox" name="skills" value="python" style="width: auto;"> Python
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0;">
+                                <input type="checkbox" name="skills" value="web" style="width: auto;"> Web Development
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0;">
+                                <input type="checkbox" name="skills" value="android" style="width: auto;"> Android
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label for="address">Permanent Address</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button type="submit" class="btn btn-primary">Submit Registration</button>
+                        <button type="reset" class="btn btn-outline">Reset Form</button>
+                    </div>
+                </form>
+            </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>

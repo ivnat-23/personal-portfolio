@@ -1,0 +1,87 @@
+<footer class="bg-pattern-dots" style="margin-top: 10rem; position: relative; overflow: hidden;">
+    
+
+    <div class="glass" style="border-radius: 40px 40px 0 0; padding: 6rem 0 3rem 0; border-bottom: none;">
+        <div class="container">
+            <!-- 4 Columns in a Single Row -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-bottom: 4rem;">
+                <!-- Column 1: Brand Info -->
+                <div>
+                    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+                        <div style="width: 35px; height: 35px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800;">TK</div>
+                        <span style="font-size: 1.5rem; font-weight: 800; color: var(--text-color);">Tanvi Kodoli</span>
+                    </a>
+                    <p style="opacity: 0.7; line-height: 1.6; font-size: 0.9rem; margin-bottom: 2rem;">
+                        Building high-performance digital experiences with innovation and precision.
+                    </p>
+                    <div style="display: flex; gap: 0.8rem;">
+                        <a href="#" class="glass" style="width: 35px; height: 35px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-color); text-decoration: none; font-size: 0.9rem;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="glass" style="width: 35px; height: 35px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-color); text-decoration: none; font-size: 0.9rem;"><i class="fab fa-github"></i></a>
+                        <a href="#" class="glass" style="width: 35px; height: 35px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-color); text-decoration: none; font-size: 0.9rem;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Navigation -->
+                <div>
+                    <h4 style="font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 700;">Navigation</h4>
+                    <ul style="list-style: none; padding: 0; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.8rem;"><a href="index.html" style="color: var(--text-color); opacity: 0.7; text-decoration: none;">Home</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="about.html" style="color: var(--text-color); opacity: 0.7; text-decoration: none;">About Me</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="projects.html" style="color: var(--text-color); opacity: 0.7; text-decoration: none;">Featured Work</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="resume.html" style="color: var(--text-color); opacity: 0.7; text-decoration: none;">Resume</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div>
+                    <h4 style="font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 700;">Services</h4>
+                    <ul style="list-style: none; padding: 0; font-size: 0.9rem; opacity: 0.7;">
+                        <li style="margin-bottom: 0.8rem;">Android Development</li>
+                        <li style="margin-bottom: 0.8rem;">Full-Stack Web Apps</li>
+                        <li style="margin-bottom: 0.8rem;">Cloud Integration</li>
+                        <li style="margin-bottom: 0.8rem;">UI/UX Architecture</li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div>
+                    <h4 style="font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 700;">Contact</h4>
+                    <div style="font-size: 0.9rem; opacity: 0.7;">
+                        <p style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i> Kolhapur, India
+                        </p>
+                        <p style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-envelope" style="color: var(--primary-color);"></i> contact@tanvi.com
+                        </p>
+                        <p style="display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-phone-alt" style="color: var(--primary-color);"></i> +91 98765 43210
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="padding-top: 2rem; border-top: 1px solid var(--glass-border); text-align: center;">
+                <p style="opacity: 0.5; font-size: 0.8rem;">
+                    &copy; 2026 Tanvi Kodoli. Built with precision.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    @media (max-width: 992px) {
+        footer div[style*="grid-template-columns: repeat(4, 1fr)"] {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+    @media (max-width: 600px) {
+        footer div[style*="grid-template-columns: repeat(4, 1fr)"] {
+            grid-template-columns: 1fr !important;
+        }
+    }
+    footer a:hover {
+        color: var(--primary-color) !important;
+        opacity: 1 !important;
+    }
+</style>
