@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Case Study | Tanvi Kodoli</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background: #fff;
+            color: #1e293b;
+        }
+
+        .case-study-hero {
+            padding: 160px 0 100px 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+            border-bottom: 1px solid #e2e8f0;
+            text-align: center;
+        }
+
+        .project-category {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary-color);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .project-title {
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -3px;
+            line-height: 1;
+        }
+
+        .hero-desc {
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+            font-size: 1.25rem;
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item h4 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #94a3b8;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta-item p {
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .content-section {
+            padding: 100px 0;
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .section-label {
+            color: var(--primary-color);
+            font-weight: 800;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            letter-spacing: -1px;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            background: #f8fafc;
+            border-radius: 24px;
+            border: 1px solid #f1f5f9;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            background: white;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border-color: var(--primary-color);
+        }
+
+        .feature-card i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .tech-tag {
+            padding: 12px 24px;
+            background: #f1f5f9;
+            border-radius: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tech-tag i {
+            color: var(--primary-color);
+        }
+
+        .project-image-full {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 32px;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.1);
+        }
+
+        .cta-box {
+            background: #0f172a;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .cta-box h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 900px) {
+            .section-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .project-image-full {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main id="project-details">
+        <!-- Hero Section -->
+        <section class="case-study-hero">
+            <div class="container">
+                <span id="p-category" class="project-category">Android Application</span>
+                <h1 id="p-title" class="project-title text-gradient">Loading Project...</h1>
+                <p id="p-hero-desc" class="hero-desc">Connecting the dots between complex problems and elegant solutions.</p>
+                
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <h4>Role</h4>
+                        <p>Lead Developer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Duration</h4>
+                        <p>3 Months</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Platform</h4>
+                        <p id="p-platform">Android / Web</p>
+                    </div>
+                    <div class="meta-item">
+                        <a href="https://github.com/tanvi-kodoli" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-grid">
+                    <div class="reveal">
+                        <span class="section-label">Features & Innovation</span>
+                        <h2 class="section-title">Core Functionalities</h2>
+                        <div id="p-features">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                    <div class="reveal">
+                        <img id="p-image" src="" alt="Project Visual" class="project-image-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="content-section" style="background: #f8fafc;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 4rem;" class="reveal">
+                    <span class="section-label">Development Tools</span>
+                    <h2 class="section-title">Technological Backbone</h2>
+                </div>
+                <div id="p-tech-stack" class="tech-stack-container reveal" style="justify-content: center;">
+                    <!-- Injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="cta-box">
+            <div class="container reveal">
+                <h2>Interested in this project?</h2>
+                <p style="margin-bottom: 3rem; opacity: 0.8; font-size: 1.2rem;">Let's discuss how we can implement similar solutions for your needs.</p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary" style="background: white; color: #0f172a;">Hire Me</a>
+                    <a href="projects.html" class="btn btn-outline" style="border-color: white; color: white;">More Projects</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/script.js"></script>
+    <script>
+        const projectData = {
+            'traffic-mitra': {
+                category: 'Android Application',
+                title: 'Traffic Mitra',
+                platform: 'Android Studio',
+                heroDesc: 'Empowering traffic police with real-time OCR technology to issue fines and manage vehicle compliance instantly.',
+                image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1200',
+                techStack: [
+                    { name: 'Java', icon: 'fab fa-java' },
+                    { name: 'Android Studio', icon: 'fas fa-mobile-alt' },
+                    { name: 'Firebase', icon: 'fas fa-fire' },
+                    { name: 'OCR (Tesseract)', icon: 'fas fa-eye' },
+                    { name: 'MySQL', icon: 'fas fa-database' }
+                ],
+                features: [
+                    { icon: 'fas fa-camera', title: 'OCR Plate Recognition', desc: 'High-speed number plate recognition from live camera feed.' },
+                    { icon: 'fas fa-file-invoice-dollar', title: 'Fine Generation', desc: 'Digital fine issuance with automated penalty mapping.' },
+                    { icon: 'fas fa-history', title: 'Vehicle History', desc: 'Instant access to violation history and pending records.' }
+                ]
+            },
+            'women-safety': {
+                category: 'Safety Tech',
+                title: 'Women Safety SOS',
+                platform: 'Android (Java)',
+                heroDesc: 'A 24/7 background protection service that coordinates rapid emergency response through intelligent triggers.',
+                image: 'https://images.unsplash.com/photo-1614062848658-69bee90a2981?auto=format&fit=crop&q=80&w=1200',
+                techStack: [
+                    { name: 'Java', icon: 'fab fa-java' },
+                    { name: 'Google Maps API', icon: 'fas fa-map-marked-alt' },
+                    { name: 'Accelerometer API', icon: 'fas fa-tachometer-alt' },
+                    { name: 'Firebase', icon: 'fas fa-fire' }
+                ],
+                features: [
+                    { icon: 'fas fa-hand-holding-heart', title: 'Shake SOS', desc: 'Violent shake detection triggers immediate emergency alerts.' },
+                    { icon: 'fas fa-microphone-alt', title: 'Voice Activation', desc: 'Voice-command recognition that works even in background mode.' },
+                    { icon: 'fas fa-location-arrow', title: 'Live Location Tracking', desc: 'Continuous location streaming to trusted emergency contacts.' }
+                ]
+            },
+            'vidhaan-dental': {
+                category: 'Healthcare Web',
+                title: 'Vidhaan Dental Clinic',
+                platform: 'Web Platform',
+                heroDesc: 'Modernizing patient management and appointment scheduling for a high-traffic dental clinic.',
+                image: 'https://images.unsplash.com/photo-1606811841660-1b5168c8139d?auto=format&fit=crop&q=80&w=1200',
+                techStack: [
+                    { name: 'HTML5/CSS3', icon: 'fab fa-html5' },
+                    { name: 'JavaScript', icon: 'fab fa-js' },
+                    { name: 'Responsive Design', icon: 'fas fa-laptop-code' },
+                    { name: 'Node.js', icon: 'fab fa-node-js' }
+                ],
+                features: [
+                    { icon: 'fas fa-calendar-check', title: 'Instant Booking', desc: 'Real-time appointment scheduling with automated confirmation.' },
+                    { icon: 'fas fa-teeth', title: 'Service Gallery', desc: 'Professional showcase of dental procedures and results.' },
+                    { icon: 'fas fa-mobile-alt', title: 'Fully Responsive', desc: 'Optimized experience across smartphones, tablets, and desktops.' }
+                ]
+            },
+            'hire-mate': {
+                category: 'AI Platform',
+                title: 'Hire Mate',
+                platform: 'Web / React',
+                heroDesc: 'Bridging the gap between students and placements using advanced AI behavior analysis.',
+                image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200',
+                techStack: [
+                    { name: 'React', icon: 'fab fa-react' },
+                    { name: 'AI Models', icon: 'fas fa-brain' },
+                    { name: 'WebRTC', icon: 'fas fa-video' },
+                    { name: 'Node.js', icon: 'fab fa-node-js' }
+                ],
+                features: [
+                    { icon: 'fas fa-video', title: 'Face Analysis', desc: 'Analyzes confidence and body language during mock sessions.' },
+                    { icon: 'fas fa-file-alt', title: 'Resume Integration', desc: 'Dynamic question generation based on user experience profile.' },
+                    { icon: 'fas fa-chart-line', title: 'Data Analytics', desc: 'Provides comprehensive scoring and improvement roadmaps.' }
+                ]
+            },
+            'nextstep': {
+                category: 'EdTech',
+                title: 'NextStep Predictor',
+                platform: 'Firebase / Web',
+                heroDesc: 'Data-driven college prediction system for engineering aspirants in Maharashtra.',
+                image: 'https://images.unsplash.com/photo-1523050853023-8c2d29077df1?auto=format&fit=crop&q=80&w=1200',
+                techStack: [
+                    { name: 'Firebase', icon: 'fas fa-fire' },
+                    { name: 'Python', icon: 'fab fa-python' },
+                    { name: 'React', icon: 'fab fa-react' }
+                ],
+                features: [
+                    { icon: 'fas fa-university', title: 'Smart Match', desc: 'Predicts admission chances based on merit and past data.' },
+                    { icon: 'fas fa-search-location', title: 'Region Filters', desc: 'Search colleges by city, status, and autonomous categories.' },
+                    { icon: 'fas fa-shield-alt', title: 'Secure Backend', desc: 'Reliable data management for thousands of college records.' }
+                ]
+            },
+            'kmt-connect': {
+                category: 'City Services',
+                title: 'KMT Connect',
+                platform: 'IoT / Maps',
+                heroDesc: 'Modernizing public transport in Kolhapur through real-time visibility and feedback.',
+                image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200',
+                techStack: [
+                    { name: 'Google Maps API', icon: 'fas fa-map-marked-alt' },
+                    { name: 'Firebase', icon: 'fas fa-database' },
+                    { name: 'JavaScript', icon: 'fab fa-js' }
+                ],
+                features: [
+                    { icon: 'fas fa-bus', title: 'Live Tracking', desc: 'See current bus locations on a live map interface.' },
+                    { icon: 'fas fa-route', title: 'Route Finder', desc: 'Find bus numbers and timings between any two city points.' },
+                    { icon: 'fas fa-comment-alt', title: 'Grievance Portal', desc: 'Direct feedback line to municipal authorities for commuters.' }
+                ]
+            }
+        };
+
+        function initCaseStudy() {
+            const hash = window.location.hash.substring(1);
+            const project = projectData[hash] || projectData['traffic-mitra'];
+            
+            document.title = `${project.title} | Tanvi Kodoli`;
+            document.getElementById('p-category').innerText = project.category;
+            document.getElementById('p-title').innerText = project.title;
+            document.getElementById('p-platform').innerText = project.platform;
+            document.getElementById('p-hero-desc').innerText = project.heroDesc;
+            document.getElementById('p-image').src = project.image;
+            
+            // Features
+            const featureHtml = project.features.map(f => `
+                <div class="feature-card">
+                    <i class="${f.icon}"></i>
+                    <h4>${f.title}</h4>
+                    <p style="opacity: 0.8; font-size: 0.9rem;">${f.desc}</p>
+                </div>
+            `).join('');
+            document.getElementById('p-features').innerHTML = featureHtml;
+
+            // Tech Stack
+            const techHtml = project.techStack.map(t => `
+                <div class="tech-tag">
+                    <i class="${t.icon}"></i> ${t.name}
+                </div>
+            `).join('');
+            document.getElementById('p-tech-stack').innerHTML = techHtml;
+
+            // Scroll reveal trigger
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(r => r.classList.add('active'));
+        }
+
+        window.addEventListener('hashchange', initCaseStudy);
+        window.addEventListener('DOMContentLoaded', initCaseStudy);
+    </script>
+</body>
+</html>
