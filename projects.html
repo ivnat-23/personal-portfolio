@@ -172,6 +172,52 @@
             transform: translateY(-2px);
         }
 
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 12px 28px;
+            border-radius: 50px;
+            background: white;
+            border: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        .filter-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .project-card.hidden {
+            display: none;
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
         @media (max-width: 768px) {
             .projects-grid {
                 grid-template-columns: 1fr;
@@ -186,13 +232,20 @@
         <div class="container">
             <header class="projects-header reveal">
                 <h1 class="text-gradient" style="font-size: 3.5rem; margin-bottom: 1rem;">Portfolio Showcase</h1>
-                <p style="max-width: 600px; margin: 0 auto; opacity: 0.7;">A curated selection of my technical projects across mobile development, web engineering, and AI solutions.</p>
+                <p style="max-width: 600px; margin: 0 auto 3rem auto; opacity: 0.7;">A curated selection of my technical projects across mobile development, web engineering, and AI solutions.</p>
+                
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="android">Android Apps</button>
+                    <button class="filter-btn" data-filter="web">Websites</button>
+                    <button class="filter-btn" data-filter="ai">AI & Innovations</button>
+                </div>
             </header>
 
             <div class="projects-grid">
                 <!-- Traffic Mitra -->
-                <div class="project-card reveal">
-                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=800" alt="Traffic Mitra" class="project-image">
+                <div class="project-card reveal" data-category="android">
+                    <img src="assets/images/traffic.png" alt="Traffic Mitra" class="project-image">
                     <div class="project-content">
                         <span class="project-category">Android App</span>
                         <h3 class="project-title">Traffic Mitra</h3>
@@ -206,7 +259,7 @@
                             <a href="project-details.html#traffic-mitra" class="action-btn btn-view">
                                 <i class="fas fa-arrow-right"></i> Details
                             </a>
-                            <a href="https://github.com/tanvi-kodoli" target="_blank" class="action-btn btn-github">
+                            <a href="https://github.com/ivnat-23" target="_blank" class="action-btn btn-github">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                         </div>
@@ -214,8 +267,8 @@
                 </div>
 
                 <!-- Women Safety -->
-                <div class="project-card reveal">
-                    <img src="https://images.unsplash.com/photo-1614062848658-69bee90a2981?auto=format&fit=crop&q=80&w=800" alt="Women Safety" class="project-image">
+                <div class="project-card reveal" data-category="android">
+                    <img src="assets/images/women_safety.png" alt="Women Safety" class="project-image">
                     <div class="project-content">
                         <span class="project-category">Android App</span>
                         <h3 class="project-title">Women Safety</h3>
@@ -229,7 +282,7 @@
                             <a href="project-details.html#women-safety" class="action-btn btn-view">
                                 <i class="fas fa-arrow-right"></i> Details
                             </a>
-                            <a href="https://github.com/tanvi-kodoli" target="_blank" class="action-btn btn-github">
+                            <a href="https://github.com/ivnat-23" target="_blank" class="action-btn btn-github">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                         </div>
@@ -237,8 +290,8 @@
                 </div>
 
                 <!-- Vidhaan Dental Clinic -->
-                <div class="project-card reveal">
-                    <img src="https://images.unsplash.com/photo-1606811841660-1b5168c8139d?auto=format&fit=crop&q=80&w=800" alt="Vidhaan Dental Clinic" class="project-image">
+                <div class="project-card reveal" data-category="web">
+                    <img src="assets/images/viddhan.png" alt="Vidhaan Dental Clinic" class="project-image">
                     <div class="project-content">
                         <span class="project-category">Web Platform</span>
                         <h3 class="project-title">Vidhaan Dental Clinic</h3>
@@ -252,7 +305,7 @@
                             <a href="project-details.html#vidhaan-dental" class="action-btn btn-view">
                                 <i class="fas fa-arrow-right"></i> Details
                             </a>
-                            <a href="https://github.com/tanvi-kodoli" target="_blank" class="action-btn btn-github">
+                            <a href="https://github.com/ivnat-23" target="_blank" class="action-btn btn-github">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                         </div>
@@ -260,8 +313,8 @@
                 </div>
 
                 <!-- Hire Mate -->
-                <div class="project-card reveal">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="Hire Mate" class="project-image">
+                <div class="project-card reveal" data-category="ai">
+                    <img src="assets/images/mockinterview.png" alt="Hire Mate" class="project-image">
                     <div class="project-content">
                         <span class="project-category">AI Web App</span>
                         <h3 class="project-title">Hire Mate</h3>
@@ -275,7 +328,7 @@
                             <a href="project-details.html#hire-mate" class="action-btn btn-view">
                                 <i class="fas fa-arrow-right"></i> Details
                             </a>
-                            <a href="https://github.com/tanvi-kodoli" target="_blank" class="action-btn btn-github">
+                            <a href="https://github.com/ivnat-23" target="_blank" class="action-btn btn-github">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                         </div>
@@ -283,8 +336,8 @@
                 </div>
 
                 <!-- NextStep Predictor -->
-                <div class="project-card reveal">
-                    <img src="https://images.unsplash.com/photo-1523050853023-8c2d29077df1?auto=format&fit=crop&q=80&w=800" alt="NextStep" class="project-image">
+                <div class="project-card reveal" data-category="ai">
+                    <img src="assets/images/nextstep.png" alt="NextStep" class="project-image">
                     <div class="project-content">
                         <span class="project-category">Education Tech</span>
                         <h3 class="project-title">NextStep Predictor</h3>
@@ -297,7 +350,7 @@
                             <a href="project-details.html#nextstep" class="action-btn btn-view">
                                 <i class="fas fa-arrow-right"></i> Details
                             </a>
-                            <a href="https://github.com/tanvi-kodoli" target="_blank" class="action-btn btn-github">
+                            <a href="https://github.com/ivnat-23" target="_blank" class="action-btn btn-github">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                         </div>
@@ -305,8 +358,8 @@
                 </div>
 
                 <!-- KMT Connect -->
-                <div class="project-card reveal">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="KMT" class="project-image">
+                <div class="project-card reveal" data-category="web">
+                    <img src="assets/images/kmt.png" alt="KMT" class="project-image">
                     <div class="project-content">
                         <span class="project-category">Smart City / IoT</span>
                         <h3 class="project-title">KMT Connect</h3>
@@ -319,7 +372,7 @@
                             <a href="project-details.html#kmt-connect" class="action-btn btn-view">
                                 <i class="fas fa-arrow-right"></i> Details
                             </a>
-                            <a href="https://github.com/tanvi-kodoli" target="_blank" class="action-btn btn-github">
+                            <a href="https://github.com/ivnat-23" target="_blank" class="action-btn btn-github">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                         </div>
@@ -331,5 +384,40 @@
 
     <div id="footer"></div>
     <script src="js/script.js"></script>
+    <script>
+        // Project Filtering Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    
+                    if (filter === 'all' || filter === category) {
+                        card.classList.remove('hidden');
+                        setTimeout(() => {
+                            card.style.display = 'flex';
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.9)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                            card.classList.add('hidden');
+                        }, 400);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
