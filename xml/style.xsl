@@ -81,6 +81,38 @@
                         </xsl:for-each>
                     </table>
 
+                    <h2>Academic Records (XSLT Conditionals)</h2>
+                    <table>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>GPA</th>
+                            <th>Status (Conditional)</th>
+                        </tr>
+                        <xsl:for-each select="portfolio/academics/student">
+                            <tr>
+                                <td><xsl:value-of select="name"/></td>
+                                <td>
+                                    <xsl:if test="gpa &gt; 9.0">
+                                        <span style="color: #10b981; font-weight: 800;"> ★ <xsl:value-of select="gpa"/></span>
+                                    </xsl:if>
+                                    <xsl:if test="gpa &lt;= 9.0">
+                                        <xsl:value-of select="gpa"/>
+                                    </xsl:if>
+                                </td>
+                                <td>
+                                    <xsl:choose>
+                                        <xsl:when test="status = 'Scholar'">
+                                            <mark style="background: #10b981; color: white; padding: 2px 8px; border-radius: 4px;">Top Performer</mark>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:value-of select="status"/>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </td>
+                            </tr>
+                        </xsl:for-each>
+                    </table>
+
                     <a href="../projects.html" class="back-btn">Back to Portfolio</a>
                 </div>
             </body>

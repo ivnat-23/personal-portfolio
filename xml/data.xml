@@ -32,12 +32,25 @@
             <category>AI / Web</category>
         </project>
         <project>
-            <title>Mazi Grampanchayat App</title>
-            <category>Android / Governance</category>
+            <title>Traffic Mitra</title>
+            <category>Android App</category>
         </project>
         <project>
             <title>KMT Connect</title>
             <category>Real-time Tracking</category>
         </project>
     </projects>
+
+    <academics>
+        <student>
+            <name>Tanvi Kodoli</name>
+            <gpa>9.2</gpa>
+            <status>Scholar</status>
+        </student>
+        <student>
+            <name>Student B</name>
+            <gpa>7.5</gpa>
+            <status>Regular</status>
+        </student>
+    </academics>
 </portfolio>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Assignments Showcase | Tanvi Kodoli</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .demo-section {
+            margin-bottom: 4rem;
+            padding: 2.5rem;
+            border-radius: 24px;
+        }
+        .demo-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .tag-demo {
+            padding: 1.5rem;
+            background: var(--glass-bg);
+            border-radius: 12px;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    
+    <main style="padding-top: 120px;">
+        <div class="container">
+            <header class="section-header reveal">
+                <h1 class="text-gradient responsive-h1">Academic Lab Showcase</h1>
+                <p>Demonstrating specific web technology concepts covered in Semester-IV Experiments.</p>
+            </header>
+
+            <!-- Experiment 3: Text Formatting -->
+            <section class="glass demo-section reveal">
+                <h2 class="demo-title"><i class="fas fa-font"></i> Experiment 3: Text Formatting Tags</h2>
+                <div class="tag-demo">
+                    <p>This is <b>Bold text</b> using &lt;b&gt;.</p>
+                    <p>This is <strong>Strong text</strong> (important) using &lt;strong&gt;.</p>
+                    <p>This is <i>Italic text</i> using &lt;i&gt;.</p>
+                    <p>This is <em>Emphasized text</em> using &lt;em&gt;.</p>
+                    <p>This is <u>Underlined text</u> using &lt;u&gt;.</p>
+                    <p>This is <mark>Marked/Highlighted text</mark> using &lt;mark&gt;.</p>
+                    <p>This is <small>Small text</small> using &lt;small&gt;.</p>
+                    <p>This is <del>Deleted text</del> using &lt;del&gt;.</p>
+                    <p>This is <ins>Inserted text</ins> using &lt;ins&gt;.</p>
+                    <p>This is H<sub>2</sub>O (Subscript) and E=mc<sup>2</sup> (Superscript).</p>
+                </div>
+            </section>
+
+            <!-- Experiment 4 & 8: Lists -->
+            <section class="glass demo-section reveal">
+                <h2 class="demo-title"><i class="fas fa-list-ul"></i> Experiment 4 & 8: List Tags</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div class="tag-demo">
+                        <h4>Unordered List</h4>
+                        <ul>
+                            <li>Frontend Development</li>
+                            <li>Backend Engineering</li>
+                            <li>Android Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tag-demo">
+                        <h4>Ordered List</h4>
+                        <ol>
+                            <li>Planning</li>
+                            <li>Development</li>
+                            <li>Testing</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experiment 6: Frames -->
+            <section class="glass demo-section reveal">
+                <h2 class="demo-title"><i class="fas fa-window-maximize"></i> Experiment 6: Frames (iFrames)</h2>
+                <div class="tag-demo">
+                    <p>Demonstrating the inclusion of external content using an &lt;iframe&gt; tag.</p>
+                    <div style="border-radius: 16px; overflow: hidden; border: 2px solid var(--glass-border);">
+                        <iframe src="xml/data.xml" width="100%" height="400px" style="border:none;"></iframe>
+                    </div>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">Above: An iframe loading the internal XML data source.</p>
+                </div>
+            </section>
+
+            <!-- XML/XSLT Navigation -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="xml/data.xml" class="btn btn-primary">View XML Transformation (Ex. 11, 12, 13)</a>
+                <a href="form.html" class="btn btn-outline" style="margin-left: 1rem;">View Registration Form (Ex. 9)</a>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
